@@ -41,7 +41,7 @@ echo "Enter your name: "
 read node_id_input
 
 if [ "$ENABLE_HTTPS_REDIRECT" = "true" ]; then
-    echo "ENABLE_HTTPS_REDIRECT is enabled."
+    echo "* ENABLE_HTTPS_REDIRECT is enabled *"
     echo ">>> Updating NODE_ID & PORT_ID... ✅"
     sed -i -e "s/127.0.0.1:5000/$NODE_ID/" "$setting_json_file"
 else
